@@ -23,7 +23,7 @@ void main() {
     int a = 10;
 
     String name =
-        a; // TypeError is thrown here because the variable "name" is expecting a String value, but the variable "a" contains an int value.
+        "a"; // TypeError is thrown here because the variable "name" is expecting a String value, but the variable "a" contains an int value.
 
     print(number);
   } catch (e) {
