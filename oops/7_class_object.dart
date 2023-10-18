@@ -1,21 +1,22 @@
 // Define a MobilePhone class
+
 class MobilePhone {
   // Properties (attributes)
-  String _brand;
+  String brand;
   String model;
   double screenSize;
   int storageCapacity;
   bool isLocked;
 
   // Constructor
-  MobilePhone(this._brand, this.model, this.screenSize, this.storageCapacity,
+  MobilePhone(this.brand, this.model, this.screenSize, this.storageCapacity,
       this.isLocked);
 
-  // Getter
-  String get getBrand => this._brand;
+  // // Getter
+  // String get getBrand => this._brand;
 
-  // Setter
-  set setBrand(String brand) => this._brand = brand;
+  // // Setter
+  // set setBrand(String brand) => this._brand = brand;
 
   // Methods (behaviors)
   void makeCall(String contact) {
@@ -48,18 +49,18 @@ void main() {
   MobilePhone samsung =
       MobilePhone("Samsung", "Galaxy s22 Ultra", 6.5, 128, true);
 
-  // Set the brand name
-  nokia.setBrand = "IKall";
+  // // Set the brand name
+  // nokia.setBrand = "IKall";
 
   // Use the objects
-  print("Nokia details: ${nokia.getBrand} ${nokia.model}");
-  print("samsung details: ${samsung.getBrand} ${samsung.model}");
+  print("Nokia details: ${nokia.brand} ${nokia.model}");
+  print("samsung details: ${samsung.brand} ${samsung.model}");
 
   nokia.unlockPhone();
-  nokia.makeCall("Bob");
-  nokia.sendText("Eve", "Meeting at 2 PM");
+  nokia.makeCall("Priya");
+  nokia.sendText("Ramya", "Meeting at 2 PM");
 
   samsung.unlockPhone();
   samsung.makeCall("John");
-  samsung.sendText("Alice", "Hello, how are you?");
+  samsung.sendText("Ram", "Hello, how are you?");
 }
