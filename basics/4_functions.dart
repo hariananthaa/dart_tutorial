@@ -1,8 +1,8 @@
 void main() {
   // Function with Positional arguments
-  void greet1(String name, [int? age]) {
+  void greet1(String? name, [int? age]) {
     if (age == null) {
-      print("Hello, $name!");
+      print("Hello, $name");
     } else {
       print("Hello, $name! You are $age years old.");
     }
